@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Összes cég</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+<div th:insert="menu"></div>
+<br>
+
+<div class="card text-bg-primary mb-3 text-center">
+  <h4 class="pb-3">Itt található a cég adatai!</h4>
+  <div class="col">
+    <table class="table table-primary table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Cég</th>
+        <th scope="col">Telephely</th>
+        <th scope="col">Épületszám</th>
+        <th scope="col">Elhelyezkedése</th>
+        <th scope="col">Felülvizsgálati ideje</th>
+        <th scope="col">Érvényessége</th>
+        <th scope="col">Értéke</th>
+
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td th:utext="${klubja}"></td>
+        <td th:utext="${neve}"></td>
+        <td th:utext="${meze}"></td>
+        <td th:utext="${posztja}"></td>
+        <td th:utext="${szuletett}"></td>
+        <td th:utext="${nemzetiseg}"></td>
+        <td th:utext="${erteke}"></td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
+
